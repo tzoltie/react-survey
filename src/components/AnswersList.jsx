@@ -1,13 +1,13 @@
+/* eslint-disable react/prop-types */
 import AnswersItem from "./AnswersItem";
 
-export default function AnswersList(props) {
-  console.log("Inside AnswersList: ", props);
+export default function AnswersList({formState}) {
 
-  const { answersList } = props;
+  // const { answersList } = formState;
 
   return (
     <ul>
-      {answersList.map((answerItem, i) => (
+      {formState.map((answerItem, i) => (
         <AnswersItem answerItem={answerItem} key={i} />
       ))}
     </ul>
