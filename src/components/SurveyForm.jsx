@@ -5,26 +5,23 @@ import RadioComponents from "./RadioComponents";
 export default function SurveyForm({
   formData,
   setFormData,
-  handleSubmit,
-  updateState
+  handleSubmit
 }) {
   const updateFormData = (event) => {
-    const { name, value, type, checked } = event.target;
+    const { name, value, type} = event.target;
 
     if (type === "checkbox") {
       setFormData({
         ...formData,
-        [name]: checked,
+        [name]: value,
       });
-      console.log("checkbox clicked")
       return;
     }
     if (type === "radio") {
       setFormData({
         ...formData,
-        selectedRadioOption: value,
+        duckColour: value,
       });
-      console.log("radio clicked")
       return;
     }
 

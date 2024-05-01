@@ -6,11 +6,9 @@ function Survey() {
   const [open, setOpen] = useState(false); //Ignore this state
   const [formState, setFormState] = useState([]);
   const [formData, setFormData] = useState({
-    colour: "",
     review: "",
     username: "",
-    email: "",
-    selectedRadioOption: ''
+    email: ""
   });
 
   const handleSubmit = (event) => {
@@ -18,11 +16,9 @@ function Survey() {
     console.log(formData);
     
     setFormData({
-      colour: "",
       review: "",
       username: "",
-      email: "",
-      selectedRadioOption: ''
+      email: ""
     });
     
   }

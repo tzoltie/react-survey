@@ -3,26 +3,25 @@ export default function RadioComponents({ formData, updateFormData }) {
   return (
     <ul>
       <li>
-      <input
-          id="color-one"
+        <label htmlFor="colour-one"><input
+          id="colour-one"
           type="radio"
           name="colour"
           value="1"
-          onChange={() => console.log("HERE!!!!")}
-          checked={formData.selectedRadioOption === "1"}
-        />
-        <label htmlFor="colour-one">1</label>
+          onChange={(event) => updateFormData(event)}
+          checked={formData.duckColour === "1"}
+        />1</label>
         
       </li>
       <li>
         <label htmlFor="colour-two">
           <input
-            id="color-two"
+            id="colour-two"
             type="radio"
             name="colour"
             value="2"
             onChange={(event) => updateFormData(event)}
-            checked={formData.selectedRadioOption === "2"}
+            checked={formData.duckColour === "2"}
           />
           2
         </label>
@@ -30,12 +29,12 @@ export default function RadioComponents({ formData, updateFormData }) {
       <li>
         <label htmlFor="colour-three">
           <input
-            id="color-three"
+            id="colour-three"
             type="radio"
             name="colour"
             value="3"
             onChange={(event) => updateFormData(event)}
-            checked={formData.selectedRadioOption === "3"}
+            checked={formData.duckColour === "3"}
           />
           3
         </label>
@@ -43,12 +42,12 @@ export default function RadioComponents({ formData, updateFormData }) {
       <li>
         <label htmlFor="colour-four">
           <input
-            id="color-four"
+            id="colour-four"
             type="radio"
             name="colour"
             value="4"
             onChange={(event) => updateFormData(event)}
-            checked={formData.selectedRadioOption === "4"}
+            checked={formData.duckColour === "4"}
           />
           4
         </label>
