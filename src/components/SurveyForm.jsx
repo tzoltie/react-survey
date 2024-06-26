@@ -5,7 +5,8 @@ import RadioComponents from "./RadioComponents";
 export default function SurveyForm({
   formData,
   setFormData,
-  handleSubmit
+  handleSubmit,
+  updateState
 }) {
   const updateFormData = (event) => {
     const { name, value, type} = event.target;
@@ -41,6 +42,7 @@ export default function SurveyForm({
       <div className="form__group">
         <h3>How do you like to spend time with your rubber duck</h3>
         <Checkboxes updateFormData={updateFormData} formData={formData} />
+
       </div>
       <label>
         What else have you got to say about your rubber duck?

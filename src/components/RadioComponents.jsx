@@ -3,7 +3,8 @@ export default function RadioComponents({ formData, updateFormData }) {
   return (
     <ul>
       <li>
-        <label htmlFor="colour-one"><input
+        <label htmlFor="colour-one">
+          <input
           id="colour-one"
           type="radio"
           name="colour"

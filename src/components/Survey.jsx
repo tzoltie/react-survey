@@ -13,14 +13,13 @@ function Survey() {
 
   const handleSubmit = (event) => {
     event.preventDefault()
-    console.log(formData);
     
     setFormData({
       review: "",
       username: "",
       email: ""
     });
-    
+    updateState(event)
   }
 
   const updateState = (event) => {
@@ -36,7 +35,7 @@ function Survey() {
     <main className="survey">
       <section className={`survey__list ${open ? "open" : ""}`}>
         <h2>Answers list</h2>
-        {/* {<AnswersList formState={formState} />} */}
+        {<AnswersList formState={formState} />}
       </section>
       <section className="survey__form">
         {
