@@ -5,8 +5,7 @@ import RadioComponents from "./RadioComponents";
 export default function SurveyForm({
   formData,
   setFormData,
-  handleSubmit,
-  updateState
+  handleSubmit
 }) {
   const updateFormData = (event) => {
     const { name, value, type} = event.target;
@@ -14,7 +13,7 @@ export default function SurveyForm({
     if (type === "checkbox") {
       setFormData({
         ...formData,
-        [name]: value,
+        [name]: value
       });
       return;
     }

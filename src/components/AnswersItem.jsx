@@ -22,7 +22,7 @@ function ItemsList({ list }) {
 // This is the main component being exported from this file
 export default function AnswersItem ({ answerItem }) {
   const ansObj = Object.values(answerItem.formData)
-  const { review, username, email, duckColour, timeSpent = [ansObj[4]] } = answerItem.formData
+  const { review, username, duckColour, timeSpent = [ansObj[4]] } = answerItem.formData
 
   return (
     <li>

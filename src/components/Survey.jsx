@@ -25,8 +25,8 @@ function Survey() {
   const updateState = (event) => {
     event.preventDefault()
     
-    setFormState([{
-      ...formState,
+    setFormState([
+      ...formState, {
       formData
     }])
   };
